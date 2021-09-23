@@ -26,9 +26,9 @@ function recursiveFunc(obj, result = {}) {
             if (Array.isArray(obj[key])) {
                 result[key] = obj[key];
             } else if (typeof obj[key] === 'object') {
-                result[key] = obj[key]
+                result[key] = obj[key];
             } else {
-                recursiveFunc(obj[key], result)
+                recursiveFunc(obj[key], result);
             }
         }
     }
